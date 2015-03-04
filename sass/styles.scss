@@ -102,7 +102,7 @@ header {
   font-family: $current-font;
   padding: 3em 2em 1em 2em;
   
-  h2 {
+  .title {
     $side-padding: 8px;
     text-transform: uppercase;
     display: inline-block;
@@ -147,7 +147,8 @@ header {
       $max-side: 280px;
       border-radius: 50%;
       background: white;
-      
+      background-image: url("../images/default_profile.png");
+      background-size: contain;
       width: $side;
       min-width: $max-side/1.5;
       max-width: $max-side;
@@ -162,7 +163,17 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    h1 { text-align: center; }
+    
+    h1 { 
+      text-align: center;
+      margin-bottom: 0.25em;
+    }
+    h2 {
+      margin: 0;
+      font-size: 125%;
+      text-align: center;
+      font-weight: normal;
+    }
     p  { 
       text-align: justify; 
       &::first-letter {
@@ -185,8 +196,8 @@ header {
       text-align: center;
       text-decoration: none;
       color: inherit;
-
-      padding: $side/4;
+      font-size: 150%;
+      padding: $side/8;
       margin: 0 0.5em;
       background: rgba(90%, 90%, 90%, 0.1);
       
@@ -276,10 +287,12 @@ header {
     border: 1px solid $skill-border-color;
     padding: 0 .75em .75em .75em;
     margin: 8px;
+    vertical-align: top;
     
     .name {
       margin: 0;
       padding: 1em 0.5em;
+      min-height: 4.5em;
     }
 
     .bar {
@@ -327,8 +340,11 @@ header {
     width: 192px;
     padding: 12px 16px;
     margin: 12px;
-    
+    vertical-align: top;
+
     .img {
+      background-image: url("../images/default_project.png");
+      background-size: contain;
       width: $img-side;
       height: $img-side;
       margin: 0 auto;
@@ -340,9 +356,11 @@ header {
       }
     }
     
-    .title {
+    .name {
       text-align: center;
-      
+      min-height: 2.5em;
+      margin: 1em;
+
       & a:hover {
         color: $hover-color;
       }
@@ -429,7 +447,7 @@ footer {
 
     #contact-info {
       font-size: 100%;
-      margin: 0;
+      margin: 1em;
 
       a {
         $side: 48px;
@@ -437,7 +455,7 @@ footer {
         height: $side;
         border-radius: $side/8;
         text-align: center;
-        padding: $side/4;
+        padding: $side/8;
         margin: 0 0.25em;
         background: rgba(90%, 90%, 90%, 0.1);
         

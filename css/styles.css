@@ -93,7 +93,7 @@ header .menu {
   font-family: "Asap", sans-serif;
   padding: 3em 2em 1em 2em;
 }
-.section h2 {
+.section .title {
   text-transform: uppercase;
   display: inline-block;
   padding-bottom: 4px;
@@ -146,6 +146,8 @@ header .menu {
 #bio .left #picture {
   border-radius: 50%;
   background: white;
+  background-image: url("../images/default_profile.png");
+  background-size: contain;
   width: 25vw;
   min-width: 186.66667px;
   max-width: 280px;
@@ -175,6 +177,13 @@ header .menu {
 }
 #bio .right h1 {
   text-align: center;
+  margin-bottom: 0.25em;
+}
+#bio .right h2 {
+  margin: 0;
+  font-size: 125%;
+  text-align: center;
+  font-weight: normal;
 }
 #bio .right p {
   text-align: justify;
@@ -196,7 +205,8 @@ header .menu {
   text-align: center;
   text-decoration: none;
   color: inherit;
-  padding: 16px;
+  font-size: 150%;
+  padding: 8px;
   margin: 0 0.5em;
   background: rgba(229, 229, 229, 0.1);
 }
@@ -266,10 +276,12 @@ header .menu {
   border: 1px solid #CCC;
   padding: 0 .75em .75em .75em;
   margin: 8px;
+  vertical-align: top;
 }
 #skills .skill .name {
   margin: 0;
   padding: 1em 0.5em;
+  min-height: 4.5em;
 }
 #skills .skill .bar {
   background: #FFF;
@@ -330,8 +342,11 @@ header .menu {
   width: 192px;
   padding: 12px 16px;
   margin: 12px;
+  vertical-align: top;
 }
 #portfolio .project .img {
+  background-image: url("../images/default_project.png");
+  background-size: contain;
   width: 160px;
   height: 160px;
   margin: 0 auto;
@@ -342,10 +357,12 @@ header .menu {
   border-color: #C22;
   opacity: 0.6;
 }
-#portfolio .project .title {
+#portfolio .project .name {
   text-align: center;
+  min-height: 2.5em;
+  margin: 1em;
 }
-#portfolio .project .title a:hover {
+#portfolio .project .name a:hover {
   color: #C22;
 }
 
@@ -429,14 +446,14 @@ footer a:hover {
   }
   #bio #contact-info {
     font-size: 100%;
-    margin: 0;
+    margin: 1em;
   }
   #bio #contact-info a {
     width: 48px;
     height: 48px;
     border-radius: 6px;
     text-align: center;
-    padding: 12px;
+    padding: 6px;
     margin: 0 0.25em;
     background: rgba(229, 229, 229, 0.1);
   }
