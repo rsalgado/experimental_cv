@@ -1,0 +1,86 @@
+@media (max-width: 801px) {
+  body {
+    font-size: 80%;
+  }
+
+  .section {
+    padding: 1em 1em 1em 1.5em;
+  }
+
+  header {
+    width: 80vw;
+    
+    .menu.toggled + nav {
+      display: flex; // makes the nav visible when the menu is toggled
+    }
+    
+    nav {
+      display: none;  // gets overwritten when the menu is toggled
+      flex-direction: column;
+      a {
+        max-width: 100%;
+      }
+    }
+    
+    .menu {
+      $side: 10vw;
+      $max-side: 64px;
+      color: white;
+      font-weight: bold;
+      font-size: 85%;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      background: #333;
+      position: fixed;
+      right: 2.5vw;
+      min-width: $max-side/2;
+      min-height: $max-side/2;
+      max-width: $max-side;
+      max-height: $max-side;
+      width: $side;
+      height: $side;
+      padding: $side/3 0;
+      margin-top: 2.5vw;
+      border-radius: 4px;
+      box-shadow: 0 -2px 0px 1px #000 inset;
+      
+      &:hover {
+        background: #444;
+      }
+    }
+  }
+  
+  #bio {
+    flex-direction: column;
+
+    #contact-info {
+      font-size: 100%;
+      margin: 1em;
+
+      a {
+        $side: 48px;
+        width: $side;
+        height: $side;
+        border-radius: $side/8;
+        text-align: center;
+        padding: $side/8;
+        margin: 0 0.25em;
+        background: rgba(90%, 90%, 90%, 0.1);
+        
+        &:hover {
+          background: rgba(90%, 90%, 90%, 0.25);
+        }
+      }      
+    }    
+  }
+
+  #skills .skill {
+    width: 10em;
+    margin: 6px;
+  }
+
+  #skills .category ul, #portfolio ul {
+    padding-left: 0;
+  }
+}

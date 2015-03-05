@@ -1,0 +1,18 @@
+footer {
+  background: #444;
+  color: #CCC;
+  font-size: 80%;
+  min-height: 8em;
+  padding: 1em;
+  text-align: center;
+  
+  a {
+    color: #CCC;
+    font-weight: bold;
+    text-decoration: none;
+    
+    &:hover {
+      color: #FFF;
+    }
+  }
+}

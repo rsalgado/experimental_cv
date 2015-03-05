@@ -1,0 +1,93 @@
+#bio {
+  background: rgba(20%, 40%, 50%, 0.875);
+  padding-top: 3em;
+  position: relative;
+  color: #FFF;
+  display: flex;
+  
+  
+  &::after {
+    background: $bio-background-url center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    content: "";
+  }
+  
+  .left, .right {
+    padding: 2vmax;
+  }
+  .left {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    #picture {
+      $side: 25vw;
+      $max-side: 280px;
+      border-radius: 50%;
+      background: white;
+      background-image: url("../images/default_profile.png");
+      background-size: contain;
+      width: $side;
+      min-width: $max-side/1.5;
+      max-width: $max-side;
+      height: $side;
+      min-height: $max-side/1.5;
+      max-height: $max-side;
+    }
+  }
+  .right {
+    font-size: 150%;
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h1 { 
+      text-align: center;
+      margin-bottom: 0.25em;
+    }
+    h2 {
+      margin: 0;
+      font-size: 125%;
+      text-align: center;
+      font-weight: normal;
+    }
+    p  { 
+      text-align: justify; 
+      &::first-letter {
+        font-size: 125%;
+        font-weight: bold;
+      }
+    }
+  }
+
+  #contact-info {
+    margin: 2em;
+    text-align: center;
+    a {
+      $side: 64px;
+      display: inline-block;
+      width: $side;
+      height: $side;
+      border: 2px solid #FFF;
+      border-radius: $side/8;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      font-size: 150%;
+      padding: $side/8;
+      margin: 0 0.5em;
+      background: rgba(90%, 90%, 90%, 0.1);
+      
+      &:hover {
+        background: rgba(90%, 90%, 90%, 0.25);
+      }
+    }
+  }
+}

@@ -3,10 +3,10 @@
   ## Structure:
     * Common variables
     * Common classes
+    * Common Education and Experience styles
     * Header/Navigation Bar styles
     * Section styles
     * Bio styles
-    * Common Education and Experience styles
     * Education styles
     * Experience styles
     * Skills styles
@@ -42,6 +42,40 @@
 
 .portfolio {
   border-bottom-color: #e54c4c;
+}
+
+#education, #experience {
+  background: #F4F4F4;
+}
+#education .history, #experience .history {
+  border-left: 4px solid;
+  padding: 24px 0;
+  position: relative;
+}
+#education .history .entry, #experience .history .entry {
+  background: white;
+  padding: 0.5em 2em;
+  max-width: 64em;
+  border-radius: 0 12px 12px 0;
+  margin-bottom: 24px;
+}
+#education .history .entry .time, #experience .history .entry .time {
+  color: #bfbfbf;
+}
+#education .history .entry .time::before, #experience .history .entry .time::before {
+  content: "\2014\ [";
+}
+#education .history .entry .time::after, #experience .history .entry .time::after {
+  content: "]";
+}
+#education .history::after, #experience .history::after {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: -16px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
 }
 
 header {
@@ -212,40 +246,6 @@ header .menu {
 }
 #bio #contact-info a:hover {
   background: rgba(229, 229, 229, 0.25);
-}
-
-#education, #experience {
-  background: #F4F4F4;
-}
-#education .history, #experience .history {
-  border-left: 4px solid;
-  padding: 24px 0;
-  position: relative;
-}
-#education .history .entry, #experience .history .entry {
-  background: white;
-  padding: 0.5em 2em;
-  max-width: 64em;
-  border-radius: 0 12px 12px 0;
-  margin-bottom: 24px;
-}
-#education .history .entry .time, #experience .history .entry .time {
-  color: #bfbfbf;
-}
-#education .history .entry .time::before, #experience .history .entry .time::before {
-  content: "\2014\ [";
-}
-#education .history .entry .time::after, #experience .history .entry .time::after {
-  content: "]";
-}
-#education .history::after, #experience .history::after {
-  content: "";
-  position: absolute;
-  bottom: -14px;
-  left: -16px;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
 }
 
 #education .history {

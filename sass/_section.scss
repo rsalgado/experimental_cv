@@ -1,0 +1,15 @@
+.section {
+  min-height: 100vh;
+  font-family: $current-font;
+  padding: 3em 2em 1em 2em;
+  
+  .title {
+    $side-padding: 8px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 4px;
+    padding-left: $side-padding;
+    padding-right: $side-padding;
+    margin-bottom: 0;
+  }
+}

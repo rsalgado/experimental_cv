@@ -1,0 +1,8 @@
+#education {
+ .history {
+   border-left-color: $education-color;
+   &::after {
+     background: $education-color;
+   }
+ }
+}

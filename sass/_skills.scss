@@ -1,0 +1,57 @@
+#skills {
+  $skill-background: #FAFAFA;
+  $skill-width: 12em;
+  $skill-border-color: #CCC;
+  $bar-background: #FFF;
+  $bar-height: 28px;
+  $bar-border-radius: 6px;
+  $bar-color: $skills-color;
+  
+  .category {
+    padding: 1em 0;
+    ul { 
+      list-style-type: none;
+    }
+  }
+  
+  .skill {
+    display: inline-block;
+    background: $skill-background;
+    width: $skill-width;
+    box-shadow: 0 0 8px 1px $skill-border-color;
+    border: 1px solid $skill-border-color;
+    padding: 0 .75em .75em .75em;
+    margin: 8px;
+    vertical-align: top;
+    
+    .name {
+      margin: 0;
+      padding: 1em 0.5em;
+      min-height: 4.5em;
+    }
+
+    .bar {
+      background: $bar-background;
+      height: 28px;
+      border: 3px double #DDD;
+      border-radius: $bar-border-radius;
+      position: relative;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: $bar-border-radius - 2px;
+        background: $bar-color;
+      }
+    }
+    
+    @for $i from 1 through 10 {
+      &[data-level="#{$i}"] .bar::after {
+        width: 10%*$i;
+      }      
+    }
+  }
+  
+}

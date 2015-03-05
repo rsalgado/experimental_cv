@@ -1,0 +1,41 @@
+$header-background: rgba(255,255,255, 0.875);
+$header-height: 3em;
+$font-color: #444;
+
+header {
+  font-family: $current-font;
+  position: fixed;  
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  background: $header-background;
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    
+    a {
+      flex: 1;
+      padding: 1em;
+      margin: 0 1em;
+      max-width: 12em;
+      min-width: 8em;
+      height: $header-height;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 100%;
+      color: $font-color;
+      
+      &:hover {
+        background: linear-gradient(#EFEFEF, #FFF);
+      }
+    }
+  }
+  
+  .menu {
+    display: none;
+  }
+}
