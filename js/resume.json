@@ -1,0 +1,76 @@
+{
+  "name": "Roberto Salgado",
+  
+  "profession": "Engineeer. Software Developer.",
+  
+  "profile_picture": "http://www.gravatar.com/avatar/c727f9df4adf77abc67680972f44dd26?s=256",
+  
+  "summary": ["I'm a colombian Engineering/CS graduate in his 20s who tries to craft good code and sometimes makes it. I do software development, mostly web development, and have interest in Computer Science, some Tech and Engineering related areas.", 
+              "In my spare time I like listening to music, playing PC games, watching some TV series and movies, reading, and also, learning about whatever I find interesting."],
+  
+  "contact": {
+    "email": "rsalgado03@gmail.com",
+    "github": "https://github.com/rsalgado",
+    "linkedin": "#"
+  },
+
+  "education": [
+    {
+      "place": "Universidad Tecnol&oacute;gica de Bol&iacute;var (UTB)",
+      "time": "2008 - 2013",
+      "description": "Undergraduate degree in Systems Engineering (Ingenier&iacute;a de Sistemas) - Colombia's equivalent of Computer Science/Engineering."
+    },
+    {
+      "place": "Coursera",
+      "time": "Since 2011",
+      "description": "Various online courses on different topics like Algorithms & Data Structures, Machine Learning, Learning Techniques and Critical Thinking."
+    }
+  ],
+
+  "experience": [
+    {
+      "place": "ISF de Colombia",
+      "time": "03-2014 - 09-2014",
+      "description": "Software Developer. Mostly working with .NET and Oracle technologies at different levels of the stack, working in small projects to add features and make changes to large web application."
+    },
+    {
+      "place": "El Universal",
+      "time": "06-2012 - 12-2012",
+      "description": "Internship at IT department. Procedures documentation and some internal Android development."
+    }
+  ],
+
+  "skills": [
+    {
+      "category": "Languages",
+      "skills": [
+        {"name": "Spanish", "level": "10"},
+        {"name": "English", "level": "7"}
+      ]
+    },
+    {
+      "category": "Programming (and other Formal) Languages",
+      "skills": [
+        {"name": "HTML5 & CSS3", "level": "6"},
+        {"name": "Javascript", "level": "6"},
+        {"name": "C#", "level": "4"},
+        {"name": "Ruby", "level": "4"},
+        {"name": "Java", "level": "4"},
+        {"name": "Python", "level": "1"},
+        {"name": "Octave/Matlab", "level": "1"}
+      ]
+    },
+    {
+      "category": "Other Technologies (libraries, frameworks, tools, etc.)",
+      "skills": [
+        {"name": "Git", "level": "6"},
+        {"name": "jQuery/Zepto", "level": "6"},
+        {"name": "SASS (SCSS)", "level": "5"},
+        {"name": "ASP.NET WebApi/MVC", "level": "3"},
+        {"name": "Ruby on Rails", "level": "3"},
+        {"name": "Angular.js", "level": "2"},
+        {"name": "*NIX (Ubuntu) Shell", "level": "2"}
+      ]
+    }
+  ]
+}

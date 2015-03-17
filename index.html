@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="resumeApp">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/flaticon.css">
 
 </head>
-<body ng-app="resumeApp">
+<body ng-controller="ResumeController as resumeCtrl">
 
 <header>
   <a href="#" class="menu">MENU</a>
@@ -25,20 +25,21 @@
 
 <section class="section" id="bio">
   <div class="left">
-      <img id="picture" src="" title="Profile Picture">
+      <img id="picture" ng-src="{{resumeCtrl.resume.profile_picture}}" title="Profile Picture">
   </div>
   <div class="right">
     <article>
-      <h1 id="name">My Name</h1>
-      <h2>Software Developer. Engineer.</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis dui arcu, vitae fermentum augue semper ac. Integer elementum commodo ligula eu sodales. Maecenas tristique ipsum dapibus, porta lectus nec, scelerisque ligula. Nullam vel libero varius, lacinia risus vel, sollicitudin odio.</p>
-      <p>Mauris placerat, ante id imperdiet efficitur, mauris turpis maximus risus, eu viverra velit tellus a urna. Aliquam viverra tortor a neque egestas elementum. Vivamus id posuere sem. Sed euismod interdum ultrices.  </p>
+      <h1 id="name"> {{resumeCtrl.resume.name}} </h1>
+      <h2> {{resumeCtrl.resume.profession}} </h2>
+      <p ng-repeat="paragraph in resumeCtrl.resume.summary">
+        {{paragraph}}
+      </p>
       
     </article>
     <div id="contact-info">
-      <a class="flaticon-github" href="#" title="GitHub"></a>
-      <a class="flaticon-linkedin" href="#" title="LinkedIn"></a>
-      <a class="flaticon-email" href="#" title="Email"></a>
+      <a class="flaticon-github" title="GitHub" ng-href="{{resumeCtrl.resume.contact.github}}" ></a>
+      <a class="flaticon-linkedin" title="LinkedIn" ng-href="{{resumeCtrl.resume.contact.linkedin}}" ></a>
+      <a class="flaticon-email" title="Email" ng-href="mailto:{{resumeCtrl.resume.contact.email}}" ></a>
     </div>
   </div>
 </section>
@@ -165,9 +166,9 @@
   <p>Paciently coded and crafted by: <a href="https://github.com/rsalgado">Roberto Salgado.</a> 2015.</p>
 </footer>
 
-<script src="js/zepto.min.js"></script>
-<script src="js/main.js"></script>
 <script src="js/angular.min.js"></script>
 <script src="js/app.js"></script>
+<script src="js/zepto.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
