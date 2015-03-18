@@ -12,6 +12,7 @@
 </head>
 <body ng-controller="ResumeController as resumeCtrl">
 
+<!-- Menu -->
 <header>
   <a href="#" class="menu">MENU</a>
   <nav>
@@ -23,10 +24,12 @@
   </nav>
 </header>
 
+<!-- Bio section -->
 <section class="section" id="bio">
   <div class="left">
       <img id="picture" ng-src="{{resumeCtrl.resume.profile_picture}}" title="Profile Picture">
   </div>
+
   <div class="right">
     <article>
       <h1 id="name"> {{resumeCtrl.resume.name}} </h1>
@@ -47,9 +50,11 @@
   </div>
 </section>
 
+<!-- Education Section -->
 <section class="section" id="education">
   <h2 class="title education underline">Education</h2>
   <div class="history">
+    
     <div class="entry" ng-repeat="entry in resumeCtrl.resume.education">
       <h3>
         <span class="place">{{entry.place}}</span>
@@ -60,9 +65,11 @@
   </div>
 </section>
 
+<!-- Experience Section -->
 <section class="section experience" id="experience">
   <h2 class="title experience underline">Experience</h2>
   <div class="history">
+    
     <div class="entry" ng-repeat="entry in resumeCtrl.resume.experience">
       <h3>
         <span class="place">{{entry.place}}</span>
@@ -73,6 +80,7 @@
   </div>
 </section>
 
+<!-- Skills Section -->
 <section class="section" id="skills">
   <h2 class="title skills underline">Skills</h2>
     
@@ -87,6 +95,7 @@
   </div>
 </section>
 
+<!-- Portfolio Section -->
 <section class="section" id="portfolio">
   <h2 class="title portfolio underline">Portfolio</h2>
   
@@ -110,6 +119,7 @@
   </ul>
 </section>
 
+<!-- Footer -->
 <footer class="footer">
   <p>Bio background image:  <a href="https://www.flickr.com/photos/danielchodusov/15347878754/" target="blank">Barcelona #1.</a> by Daniel Chodusov.</p>
   
@@ -121,6 +131,7 @@
   
   <p>Paciently coded and crafted by: <a href="https://github.com/rsalgado">Roberto Salgado.</a> 2015.</p>
 </footer>
+
 
 <script src="js/angular.min.js"></script>
 <script src="js/app.js"></script>
