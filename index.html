@@ -31,14 +31,17 @@
     <article>
       <h1 id="name"> {{resumeCtrl.resume.name}} </h1>
       <h2> {{resumeCtrl.resume.profession}} </h2>
+
       <p ng-repeat="paragraph in resumeCtrl.resume.summary">
         {{paragraph}}
       </p>
-      
     </article>
+
     <div id="contact-info">
       <a class="flaticon-github" title="GitHub" ng-href="{{resumeCtrl.resume.contact.github}}" ></a>
+
       <a class="flaticon-linkedin" title="LinkedIn" ng-href="{{resumeCtrl.resume.contact.linkedin}}" ></a>
+
       <a class="flaticon-email" title="Email" ng-href="mailto:{{resumeCtrl.resume.contact.email}}" ></a>
     </div>
   </div>
@@ -55,7 +58,6 @@
       <p>{{entry.description}}</p>
     </div>
   </div>
-  
 </section>
 
 <section class="section experience" id="experience">
@@ -73,55 +75,16 @@
 
 <section class="section" id="skills">
   <h2 class="title skills underline">Skills</h2>
-  
-  <div class="category">
-    <h3>Category:</h3>
+    
+  <div class="category" ng-repeat="category in resumeCtrl.resume.skills">
+    <h3>{{category.category}}:</h3>
     <ul>
-      <li class="skill" data-level="1">
-        <h4 class="name">Skill Name</h4>
-        <div class="bar"></div>
-      </li>
-      <li class="skill" data-level="2">
-        <h4 class="name">Skill Name</h4>
-        <div class="bar"></div>
-      </li>
-      <li class="skill" data-level="3">
-        <h4 class="name">Skill Name</h4>
-        <div class="bar"></div>
-      </li>
-      <li class="skill" data-level="4">
-        <h4 class="name">Skill Name</h4>
-        <div class="bar"></div>
-      </li>
-      <li class="skill" data-level="5">
-        <h4 class="name">Skill Name</h4>
-        <div class="bar"></div>
-      </li>
-      <li class="skill" data-level="6">
-        <h4 class="name">Skill Name</h4>
+      <li ng-repeat="skill in category.skills" class="skill" data-level="{{skill.level}}">
+        <h4 class="name">{{skill.name}}</h4>
         <div class="bar"></div>
       </li>
     </ul>
   </div>
-  
-  <div class="category">
-    <h3>Category:</h3>
-    <ul>
-      <li class="skill" data-level="7">
-        <h4 class="name">A Programming Language</h4>
-        <div class="bar"></div>
-      </li>
-      <li class="skill" data-level="8">
-        <h4 class="name">Some other skill</h4>
-        <div class="bar"></div>
-      </li>
-      <li class="skill" data-level="9">
-        <h4 class="name">Yet Another Skill</h4>
-        <div class="bar"></div>
-      </li>
-    </ul>
-  </div>
-  
 </section>
 
 <section class="section" id="portfolio">
