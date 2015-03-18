@@ -47,20 +47,13 @@
 <section class="section" id="education">
   <h2 class="title education underline">Education</h2>
   <div class="history">
-    <div class="entry">
+    <div class="entry" ng-repeat="entry in resumeCtrl.resume.education">
       <h3>
-        <span class="place">Somewhere</span>
-        <span class="time">2008-2013</span>
+        <span class="place">{{entry.place}}</span>
+        <span class="time">{{entry.time}}</span>
       </h3>
-      <p>Description goes here...</p>
+      <p>{{entry.description}}</p>
     </div>
-    <div class="entry">
-      <h3>
-        <span class="place">Somewhere</span>
-        <span class="time">2006-2007</span>
-      </h3>
-      <p>Description goes here...</p>
-    </div>    
   </div>
   
 </section>
@@ -68,12 +61,12 @@
 <section class="section experience" id="experience">
   <h2 class="title experience underline">Experience</h2>
   <div class="history">
-    <div class="entry">
+    <div class="entry" ng-repeat="entry in resumeCtrl.resume.experience">
       <h3>
-        <span class="place">Somewhere</span>
-        <span class="time">8 months</span>
+        <span class="place">{{entry.place}}</span>
+        <span class="time">{{entry.time}}</span>
       </h3>
-      <p>Description goes here...</p>
+      <p>{{entry.description}}</p>
     </div>
   </div>
 </section>

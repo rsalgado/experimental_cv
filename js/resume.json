@@ -5,7 +5,7 @@
   
   "profile_picture": "http://www.gravatar.com/avatar/c727f9df4adf77abc67680972f44dd26?s=256",
   
-  "summary": ["I'm a colombian Engineering/CS graduate in his 20s who tries to craft good code and sometimes makes it. I do software development, mostly web development, and have interest in Computer Science, some Tech and Engineering related areas.", 
+  "summary": ["I'm a colombian Engineering/CS graduate in his 20s who tries to craft good code and sometimes achieves it. I do software development, mostly web development, and have interest in Computer Science, some Tech and Engineering related areas.", 
               "In my spare time I like listening to music, playing PC games, watching some TV series and movies, reading, and also, learning about whatever I find interesting."],
   
   "contact": {
@@ -16,9 +16,9 @@
 
   "education": [
     {
-      "place": "Universidad Tecnol&oacute;gica de Bol&iacute;var (UTB)",
-      "time": "2008 - 2013",
-      "description": "Undergraduate degree in Systems Engineering (Ingenier&iacute;a de Sistemas) - Colombia's equivalent of Computer Science/Engineering."
+      "place": "Universidad Tecnológica de Bolívar (UTB)",
+      "time": "2008 - 2014",
+      "description": "Undergraduate degree in Systems Engineering (Ingeniería de Sistemas) - Colombia's Equivalent to Computure Science/Engineering"
     },
     {
       "place": "Coursera",
