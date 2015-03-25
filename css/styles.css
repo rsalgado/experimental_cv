@@ -415,21 +415,17 @@ footer a:hover {
   header .menu {
     color: white;
     font-weight: bold;
-    font-size: 85%;
+    font-size: 90%;
     text-align: center;
     text-decoration: none;
     display: block;
     background: #333;
     position: fixed;
     right: 2.5vw;
-    min-width: 32px;
-    min-height: 32px;
-    max-width: 64px;
-    max-height: 64px;
-    width: 10vw;
-    height: 10vw;
-    padding: 3.33333vw 0;
-    margin-top: 2.5vw;
+    width: 48px;
+    height: 48px;
+    padding: 16px 0;
+    margin-top: 16px;
     border-radius: 4px;
     box-shadow: 0 -2px 0px 1px #000 inset;
   }

@@ -23,25 +23,20 @@
     }
     
     .menu {
-      $side: 10vw;
-      $max-side: 64px;
+      $side: 48px;
       color: white;
       font-weight: bold;
-      font-size: 85%;
+      font-size: 90%;
       text-align: center;
       text-decoration: none;
       display: block;
       background: #333;
       position: fixed;
       right: 2.5vw;
-      min-width: $max-side/2;
-      min-height: $max-side/2;
-      max-width: $max-side;
-      max-height: $max-side;
       width: $side;
       height: $side;
       padding: $side/3 0;
-      margin-top: 2.5vw;
+      margin-top: $side/3;
       border-radius: 4px;
       box-shadow: 0 -2px 0px 1px #000 inset;
       
