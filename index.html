@@ -87,7 +87,7 @@
   <div class="category" ng-repeat="category in resumeCtrl.resume.skills">
     <h3>{{category.category}}:</h3>
     <ul>
-      <li ng-repeat="skill in category.skills" class="skill" data-level="{{skill.level}}">
+      <li ng-repeat="skill in category.skills | orderBy:'level':true" class="skill" data-level="{{skill.level}}">
         <h4 class="name">{{skill.name}}</h4>
         <div class="bar"></div>
       </li>
@@ -100,22 +100,10 @@
   <h2 class="title portfolio underline">Portfolio</h2>
   
   <ul>
-    <li class="project">
-      <a href="#"><img class="img" src=""></a>
-      <h4 class="name"><a href="#">Project Name</a></h4>
+    <li class="project" ng-repeat="project in resumeCtrl.resume.portfolio" >
+      <a ng-href="{{project.url}}"><img class="img" ng-src="{{project.image}}"></a>
+      <h4 class="name"><a ng-href="{{project.url}}">{{project.name}}</a></h4>
     </li>
-    <li class="project">
-      <a href="#"><img class="img" src=""></a>
-      <h4 class="name"><a href="#">Project Name</a></h4>
-    </li>
-    <li class="project">
-      <a href="#"><img class="img" src=""></a>
-      <h4 class="name"><a href="#">Project Name</a></h4>
-    </li>
-    <li class="project">
-      <a href="#"><img class="img" src=""></a>
-      <h4 class="name"><a href="#">Yet Another Project</a></h4>
-    </li>    
   </ul>
 </section>
 

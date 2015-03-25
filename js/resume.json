@@ -44,33 +44,46 @@
     {
       "category": "Languages",
       "skills": [
-        {"name": "Spanish", "level": "10"},
-        {"name": "English", "level": "7"}
+        {"name": "Spanish", "level": 10},
+        {"name": "English", "level": 7}
       ]
     },
     {
       "category": "Programming (and other Formal) Languages",
       "skills": [
-        {"name": "HTML5 & CSS3", "level": "6"},
-        {"name": "Javascript", "level": "6"},
-        {"name": "C#", "level": "4"},
-        {"name": "Ruby", "level": "4"},
-        {"name": "Java", "level": "4"},
-        {"name": "Python", "level": "1"},
-        {"name": "Octave/Matlab", "level": "1"}
+        {"name": "HTML5 & CSS3", "level": 6},
+        {"name": "Javascript", "level": 6},
+        {"name": "C#", "level": 4},
+        {"name": "Ruby", "level": 4},
+        {"name": "Java", "level": 4},
+        {"name": "Python", "level": 1},
+        {"name": "Octave/Matlab", "level": 1}
       ]
     },
     {
       "category": "Other Technologies (libraries, frameworks, tools, etc.)",
       "skills": [
-        {"name": "Git", "level": "6"},
-        {"name": "jQuery/Zepto", "level": "6"},
-        {"name": "SASS (SCSS)", "level": "5"},
-        {"name": "ASP.NET WebApi/MVC", "level": "3"},
-        {"name": "Ruby on Rails", "level": "3"},
-        {"name": "Angular.js", "level": "2"},
-        {"name": "*NIX (Ubuntu) Shell", "level": "2"}
+        {"name": "Git", "level": 6},
+        {"name": "jQuery/Zepto", "level": 6},
+        {"name": "SASS (SCSS)", "level": 5},
+        {"name": "ASP.NET WebApi/MVC", "level": 3},
+        {"name": "Ruby on Rails", "level": 4},
+        {"name": "Angular.js", "level": 3},
+        {"name": "*NIX (Ubuntu) Shell", "level": 2}
       ]
+    }
+  ],
+
+  "portfolio": [
+    {
+      "name": "HTML5 Multitimer",
+      "url": "http://rsalgado-multitimer.herokuapp.com",
+      "image": "../images/multitimer_project.png"
+    },
+    {
+      "name": "Studium",
+      "url": "http://rsalgado-studium.herokuapp.com",
+      "image": "../images/studium_project.png"
     }
   ]
 }
