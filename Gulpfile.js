@@ -46,6 +46,15 @@ gulp.task('watch', function() {
   gulp.watch('js/*.js', notifyLiveReload);
 });
 
+// Run this one for production (Heroku) deploys
+gulp.task('production', ['styles'], function() {
+  var express = require('express');
+  var app = express();
+  app.use(express.static(__dirname));
+  app.listen(process.env.PORT || 4000);
+});
+
+
 gulp.task('default', ['styles', 'express', 'livereload', 'watch'], function() {
   
 });
