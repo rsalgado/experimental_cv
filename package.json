@@ -8,7 +8,7 @@
   },
   "author": "Roberto Salgado",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "connect-livereload": "^0.5.3",
     "express": "^4.12.2",
     "gulp": "^3.8.11",
@@ -18,9 +18,12 @@
     "gulp-ruby-sass": "^1.0.0-alpha.3",
     "tiny-lr": "^0.1.5"
   },
-  "devDependencies": {
+  "dependencies": {
     "express": "^4.12.2",
     "gulp": "^3.8.11",
     "gulp-rename": "^1.2.0"
-  }
+  },
+  "engines": {
+    "node": "0.12.x"
+  }  
 }
