@@ -9,3 +9,7 @@ For the back-end, this application uses Node.js with Express and Gulp as the tas
 1. Clone the repository
 2. Install the required Node dependencies using: `npm install`
 3. Run the site simply using: `gulp`
+
+
+# Live example
+[Experimental CV](http://rsalgado-experimental-cv.herokuapp.com/)
