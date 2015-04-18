@@ -11,5 +11,5 @@ For the back-end, this application uses Node.js with Express and Gulp as the tas
 3. Run the site simply using: `gulp`
 
 
-# Live example
+## Live example
 [Experimental CV](http://rsalgado-experimental-cv.herokuapp.com/)
