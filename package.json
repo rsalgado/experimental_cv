@@ -8,7 +8,7 @@
   },
   "author": "Roberto Salgado",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "connect-livereload": "^0.5.3",
     "express": "^4.12.2",
     "gulp": "^3.8.11",
