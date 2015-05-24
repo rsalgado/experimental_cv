@@ -84,6 +84,11 @@
       "name": "Studium",
       "url": "http://rsalgado-studium.herokuapp.com",
       "image": "../images/studium_project.png"
+    },
+    {
+      "name": "Jottly (Tutorial Landing Page)",
+      "url": "http://rsalgado.github.io/Jottly/",
+      "image": "../images/jottly_project.png"
     }
   ]
 }
