@@ -3,3 +3,4 @@ npm-debug.log
 .DS_Store
 /*.env
 .sass-cache
+css/styles.min.css
