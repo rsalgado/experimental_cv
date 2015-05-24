@@ -25,23 +25,23 @@
 }
 
 .bio {
-  border-bottom-color: #33667f;
+  border-bottom-color: #336680;
 }
 
 .education {
-  border-bottom-color: #7fb2e5;
+  border-bottom-color: #80b3e6;
 }
 
 .experience {
-  border-bottom-color: #4ccc7f;
+  border-bottom-color: #4dcc80;
 }
 
 .skills {
-  border-bottom-color: #f27f19;
+  border-bottom-color: #f2801a;
 }
 
 .portfolio {
-  border-bottom-color: #e54c4c;
+  border-bottom-color: #e64d4d;
 }
 
 #education, #experience {
@@ -137,7 +137,7 @@ header .menu {
 }
 
 #bio {
-  background: rgba(51, 102, 127, 0.875);
+  background: rgba(51, 102, 128, 0.875);
   padding-top: 3em;
   position: relative;
   color: #FFF;
@@ -242,24 +242,24 @@ header .menu {
   font-size: 150%;
   padding: 8px;
   margin: 0 0.5em;
-  background: rgba(229, 229, 229, 0.1);
+  background: rgba(230, 230, 230, 0.1);
 }
 #bio #contact-info a:hover {
-  background: rgba(229, 229, 229, 0.25);
+  background: rgba(230, 230, 230, 0.25);
 }
 
 #education .history {
-  border-left-color: #7fb2e5;
+  border-left-color: #80b3e6;
 }
 #education .history::after {
-  background: #7fb2e5;
+  background: #80b3e6;
 }
 
 #experience .history {
-  border-left-color: #4ccc7f;
+  border-left-color: #4dcc80;
 }
 #experience .history::after {
-  background: #4ccc7f;
+  background: #4dcc80;
 }
 
 #skills .category {
@@ -296,7 +296,7 @@ header .menu {
   width: 100%;
   height: 100%;
   border-radius: 4px;
-  background: #f27f19;
+  background: #f2801a;
 }
 #skills .skill[data-level="1"] .bar::after {
   width: 10%;
@@ -334,7 +334,7 @@ header .menu {
 }
 #portfolio a {
   text-decoration: none;
-  color: #e54c4c;
+  color: #e64d4d;
 }
 #portfolio .project {
   display: inline-block;
@@ -451,10 +451,10 @@ footer a:hover {
     text-align: center;
     padding: 6px;
     margin: 0 0.25em;
-    background: rgba(229, 229, 229, 0.1);
+    background: rgba(230, 230, 230, 0.1);
   }
   #bio #contact-info a:hover {
-    background: rgba(229, 229, 229, 0.25);
+    background: rgba(230, 230, 230, 0.25);
   }
 
   #skills .skill {
