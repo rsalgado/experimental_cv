@@ -68,7 +68,7 @@
         {"name": "SASS (SCSS)", "level": 5},
         {"name": "ASP.NET WebApi/MVC", "level": 3},
         {"name": "Ruby on Rails", "level": 4},
-        {"name": "Angular.js", "level": 3},
+        {"name": "Angular.js", "level": 4},
         {"name": "*NIX (Ubuntu) Shell", "level": 2}
       ]
     }
