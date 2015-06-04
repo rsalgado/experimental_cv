@@ -6,8 +6,9 @@
     this.resume = {};
 
     // HTTP request for retrieving JSON with Resume contents
+    var url = "/js/resume.json";
     var self = this;
-    $http.get("/js/resume.json")
+    $http.get(url)
       .success(function(data) {
         self.resume = data;
       })
